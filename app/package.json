@@ -1,0 +1,19 @@
+{
+  "name": "Airplane",
+  "version": "1.0.0",
+  "description": "An airplane mode applet for your Mac.",
+  "author": "Nathan Buchar <hello@nathanbuchar.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "setup": "npm install --verbose",
+    "start": "DEBUG=airplane:* electron ."
+  },
+  "devDependencies": {
+    "electron": "^1.6.11"
+  },
+  "dependencies": {
+    "debug": "^2.6.8"
+  }
+}
