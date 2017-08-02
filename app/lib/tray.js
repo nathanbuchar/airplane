@@ -43,16 +43,10 @@ class AppTray extends EventEmitter {
 
     return Menu.buildFromTemplate([
       {
-        label: this._app.airplaneModeActivated ?
-          'Deactivate Airplane Mode' :
-          'Activate Airplane Mode',
+        label: (this._app.airplaneModeActivated ? 'Deactivate' : 'Activate'),
         click: () => {
           this.emit(AppTray.Events.AIRPLANE_MODE_TOGGLED);
         }
-      },
-      {
-        label: 'Status: ' + (this._app.airplaneModeActivated ? 'On' : 'Off'),
-        enabled: false
       },
       {
         type: 'separator'
