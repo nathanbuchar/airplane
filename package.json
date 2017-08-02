@@ -25,7 +25,11 @@
     "productName": "Airplane",
     "asar": false,
     "mac": {
-      "category": "public.app-category.productivity"
+      "category": "public.app-category.productivity",
+      "extendInfo": {
+        "LSBackgroundOnly": 1,
+        "LSUIElement": 1
+      }
     }
   }
 }
